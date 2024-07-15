@@ -84,6 +84,15 @@ FROM car_data;
 UPDATE car_data
 SET `Month` = MONTHNAME(STR_TO_DATE(`Date`, '%m/%d/%Y'));
 
+ALTER TABLE car_data
+ADD COLUMN `Year` INT;
+
+SELECT RIGHT(`Date`, 4) AS `Year`
+FROM car_data;
+
+UPDATE car_data
+SET `Year` = RIGHT(`Date`, 4);
+
 -- DATA ANALYSIS --
 SELECT COUNT(*) AS Num_of_Sales
 FROM car_data;
@@ -736,6 +745,20 @@ ORDER BY Number_of_Sales DESC;
 -- 67
 -- Calculates the count of car sales per month in the car_data table,
 -- grouping the results by month and ordering them by number of sales in descending order.
+
+SELECT `Year`, SUM(`Price ($)`) AS Total_sales
+FROM car_data
+GROUP BY `Year`;
+
+-- Calculates the total sales per year from the car_data table,
+-- grouping the results by year.
+
+SELECT `Year`, `Month`, SUM(`Price ($)`) AS Total_sales
+FROM car_data
+GROUP BY `Year`, `Month`
+
+-- Calculates the total sales per year and month from the car_data table,
+-- grouping the results by both year and month.
 
 -- RESULT --
 
