@@ -1,5 +1,6 @@
 ## Overview
 My goal for this project is to identify trends and draw necessary conclusions through comprehensive analysis on relevant data.
+For PowerBI visualization: [Power Bi](https://app.powerbi.com/groups/me/reports/9323131a-6839-4619-8b9d-f06d7c93f554/6be6aaffc110554a0454?experience=power-bi)
 
 ## MySQL Setup Instructions
 
