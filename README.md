@@ -38,3 +38,6 @@ For PowerBI visualization: [Power Bi](https://app.powerbi.com/groups/me/reports/
 
 ### Troubleshooting
 - If you encounter any issues or errors during setup, refer to the [MySQL Documentation](https://dev.mysql.com/doc/) for detailed troubleshooting guides and solutions.
+
+- ## Lisence
+- This work © 2024 by Huseynov Yaqub is licensed under CC BY-NC 4.0 
